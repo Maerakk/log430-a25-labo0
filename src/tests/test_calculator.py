@@ -6,8 +6,15 @@ Auteurs : Gabriel C. Ullmann, Fabio Petrillo, 2025
 
 from calculator import Calculator
 
+
 def test_app():
     my_calculator = Calculator()
-    assert my_calculator.get_hello_message() == "Calculatrice"
+    assert my_calculator.get_hello_message() == "== Calculatrice v1.0 =="
+    print("TEST")
 
 # TODO: ajoutez les tests
+
+def test_addition():
+    calculator = Calculator()
+    assert calculator.addition(2,3)==5
+    print("TEST")
